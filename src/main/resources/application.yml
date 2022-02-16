@@ -1,1 +1,9 @@
 
+jedis :
+  pool :
+    host : 39.108.192.104
+    port : 16379
+    config :
+      maxTotal: 100
+      maxIdle: 10
+      maxWaitMillis : 100000
