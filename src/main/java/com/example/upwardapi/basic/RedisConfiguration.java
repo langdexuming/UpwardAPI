@@ -13,7 +13,6 @@ import redis.clients.jedis.JedisPoolConfig;
 public class RedisConfiguration {
 
     @Bean(name= "jedis.pool")
-    @Autowired
     public JedisPool jedisPool(@Qualifier("jedis.pool.config") JedisPoolConfig config,
                                @Value("${jedis.pool.host}")String host,
                                @Value("${jedis.pool.port}")int port) {
