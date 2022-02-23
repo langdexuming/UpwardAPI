@@ -67,3 +67,6 @@ mybatis:
     map-underscore-to-camel-case: true
   mapper-locations: classpath:mapper/mysql/*.xml
 
+nacos:
+  config:
+   server-addr:39.108.192.104:16848
