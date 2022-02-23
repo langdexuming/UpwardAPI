@@ -15,7 +15,7 @@ spring:
     username: root
     password: 30757853
     driver-class-name: com.mysql.jdbc.Driver
-    #type: com.alibaba.druid.pool.DruidDataSource
+    type: com.alibaba.druid.pool.DruidDataSource
     druid:
       #初始化大小
       initialSize: 5
@@ -62,13 +62,8 @@ spring:
         #启用
         enabled: true
 mybatis:
-  # model的包
-  type-aliases-package: ssm.app.model
   configuration:
   # 开启驼峰uName自动映射到u_name
-  map-underscore-to-camel-case: true
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/mysql/*.xml
 
-# 打印sql
-logging:
-  level:
-    ssm.app.mapper : debug

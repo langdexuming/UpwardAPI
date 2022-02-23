@@ -21,8 +21,8 @@ public class JobPositionService implements IJobPositionService{
         JobPosition jobPosition=new JobPosition();
         jobPosition.JobId=industry+"_"+jobTitle;
         jobPosition.jobIndustryInfo=new JobIndustryInfo();
-        jobPosition.jobIndustryInfo.industry=industry;
-        jobPosition.jobIndustryInfo.jobTitle=jobTitle;
+        jobPosition.jobIndustryInfo.industryTitle=industry;
+        jobPosition.jobTitle=jobTitle;
 
         String key=jobPosition.JobId;
         String value=jobPosition.jobIndustryInfo.toString();

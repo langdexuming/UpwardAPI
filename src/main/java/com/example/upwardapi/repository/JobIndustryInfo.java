@@ -1,21 +1,18 @@
 package com.example.upwardapi.repository;
 
 public class JobIndustryInfo {
-    public String industry;
+    public String id;
 
-    public String jobTitle;
+    public String industryCode;
 
-    public String superiors;
-
-    public String subordinate;
+    public String industryTitle;
 
     @Override
     public String toString() {
         return "{" +
-                "industry='" + industry + '\'' +
-                ", jobTitle='" + jobTitle + '\'' +
-                ", superiors='" + superiors + '\'' +
-                ", subordinate='" + subordinate + '\'' +
+                "id='" + id + '\'' +
+                ", industryCode='" + industryCode + '\'' +
+                ", industryTitle='" + industryTitle + '\'' +
                 '}';
     }
 }
